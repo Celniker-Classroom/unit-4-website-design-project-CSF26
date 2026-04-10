@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'playfair display', serif;
   background: linear-gradient(to bottom, #eef5f0, #dfeee4);
   color: #1c2b22;
   line-height: 1.6;
@@ -36,7 +36,7 @@ nav a {
   color: white;
   text-decoration: none;
   margin: 0 18px;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 17px;
 }
 
@@ -151,4 +151,4 @@ footer {
   color: white;
   margin-top: 50px;
   font-size: 15px;
-}
+} 
