@@ -15,7 +15,28 @@
     <a href="founder.html">Founder</a>
     <a href="projects.html">Projects</a>
     <a href="future.html">Future</a>
+    <input type="button" value="Dark Mode" onclick="toggleDarkMode()">
   </nav>
+ 
+<!--
+  <div class="topnav">
+    <div class="brand">
+       <a href="index.html" class="brand-link">
+           <img src="images/ecotek-icon.png" alt="EcoTek icon" class="nav-logo">
+           <span>EcoTek</span>
+       </a>
+    </div>
+   
+    <div class="menu-icon" onlick="toggleMenu()">☰</div>
+   
+    <div class ="nav-links" id="navLinks">
+       <a href="index.html">Home</a>
+       <a href="founder.html">Founder</a>
+       <a href="projects.html">Projects</a>
+       <a href="future.html">Future</a>
+    </div>
+   </div>
+-->
 
   <div class="container">
     <section class="card">
@@ -34,23 +55,23 @@
           <th>Use</th>
         </tr>
         <tr>
-          <td>Temperature Sensor</td>
-          <td>Tracks the temperature inside the compost bin</td>
+          <td>Temperature and Humidity Sensor</td>
+          <td>Tracks the temperature and humidity inside the compost bin</td>
         </tr>
         <tr>
           <td>Moisture Sensor</td>
           <td>Measures moisture levels to help maintain healthy compost</td>
         </tr>
         <tr>
-          <td>Gas Sensor</td>
+          <td>Gas (CO2) Sensor</td>
           <td>Detects gases released during decomposition</td>
         </tr>
         <tr>
-          <td>Microcontroller</td>
+          <td>Microcontroller - To be Added</td>
           <td>Collects sensor data and helps run the system</td>
         </tr>
         <tr>
-          <td>Display or Output System</td>
+          <td>Display or Output System - To be Added</td>
           <td>Shows data and results from the compost bin</td>
         </tr>
       </table>
@@ -62,5 +83,23 @@
     <p>© 2026 EcoTek | Student Innovation for a Better Future</p>
   </footer>
 
+  <script>
+    function goToProjects() {
+      window.location.href = "projects.html";
+    }
+    
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+
+<!--
+<script>
+  function toggleMenu() {
+     var menu = document.getElementById("navLinks");
+     menu.classList.toggle("show");
+  }
+  </script>
+-->
 </body>
 </html>

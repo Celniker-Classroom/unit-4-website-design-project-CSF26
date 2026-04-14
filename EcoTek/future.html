@@ -15,7 +15,28 @@
     <a href="founder.html">Founder</a>
     <a href="projects.html">Projects</a>
     <a href="future.html">Future</a>
+    <input type="button" value="Dark Mode" onclick="toggleDarkMode()">
   </nav>
+ 
+<!--
+  <div class="topnav">
+    <div class="brand">
+       <a href="index.html" class="brand-link">
+           <img src="images/ecotek-icon.png" alt="EcoTek icon" class="nav-logo">
+           <span>EcoTek</span>
+       </a>
+    </div>
+   
+    <div class="menu-icon" onlick="toggleMenu()">☰</div>
+   
+    <div class ="nav-links" id="navLinks">
+       <a href="index.html">Home</a>
+       <a href="founder.html">Founder</a>
+       <a href="projects.html">Projects</a>
+       <a href="future.html">Future</a>
+    </div>
+   </div>
+-->
 
   <div class="container">
     <section class="card">
@@ -32,6 +53,10 @@
         <li>Enter competitions to gain experience and recognition</li>
         <li>Build partnerships that help bring our ideas into the community</li>
       </ol>
+
+      <div class="button-box">
+        <input type="button" value="Go to Our Project Page" onclick="goToProjects()">
+      </div>
     </section>
   </div>
 
@@ -39,5 +64,23 @@
     <p>© 2026 EcoTek | Student Innovation for a Better Future</p>
   </footer>
 
+  <script>
+    function goToProjects() {
+      window.location.href = "projects.html";
+    }
+    
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+
+<!--
+<script>
+  function toggleMenu() {
+     var menu = document.getElementById("navLinks");
+     menu.classList.toggle("show");
+  }
+  </script>
+-->
 </body>
 </html>

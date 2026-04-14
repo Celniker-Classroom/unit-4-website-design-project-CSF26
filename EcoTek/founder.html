@@ -15,7 +15,28 @@
     <a href="founder.html">Founder</a>
     <a href="projects.html">Projects</a>
     <a href="future.html">Future</a>
+    <input type="button" value="Dark Mode" onclick="toggleDarkMode()">
   </nav>
+ 
+<!--
+  <div class="topnav">
+    <div class="brand">
+       <a href="index.html" class="brand-link">
+           <img src="images/ecotek-icon.png" alt="EcoTek icon" class="nav-logo">
+           <span>EcoTek</span>
+       </a>
+    </div>
+   
+    <div class="menu-icon" onlick="toggleMenu()">☰</div>
+   
+    <div class ="nav-links" id="navLinks">
+       <a href="index.html">Home</a>
+       <a href="founder.html">Founder</a>
+       <a href="projects.html">Projects</a>
+       <a href="future.html">Future</a>
+    </div>
+   </div>
+-->
 
   <div class="container">
     <section class="card">
@@ -29,13 +50,19 @@
       <h2>Our Story</h2>
       <p>
         For a long time, I was unsure of what I wanted to pursue in the future, but I always knew that I loved building, fixing, creating, and understanding how things work. Once I began exploring engineering, I realized it was a field that genuinely excited me. 
-      </p>
-      <p>
+        <span id="dots">...</span>
+        <span id="more" style="display: none;">
+        <br>
+        <br>
         When the idea of creating an engineering club came up, I saw it as an opportunity to build something inclusive for students of all skill levels. I wanted it to be a place where people could learn, contribute ideas, and work together on projects that could have a real impact.
-      </p>
-      <p>
+        <br>
+        <br>
         As I thought about possible directions for the organization, I kept coming back to environmental issues in schools. Food waste is a major problem, and many schools do not have effective composting systems. That inspired the idea for our first major project: a smart compost bin designed to make composting more efficient and informative. 
+      </span>
       </p>
+      <div class="button-box">
+        <input type="button" id="readBtn" value ="Read More" onclick="toggleReadMore()">
+      </div>
     </section>
     
     <section class="card">
@@ -49,5 +76,34 @@
     <p>© 2026 EcoTek | Student Innovation for a Better Future</p>
   </footer>
 
+  <script> 
+    function toggleReadMore() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btn = document.getElementById("readBtn");
+      
+      if (moreText.style.display === "none") {
+        moreText.style.display = "inline";
+        dots.style.display = "none";
+        btn.value = "Read Less";
+      } else {
+        moreText.style.display = "none";
+        dots.style.display = "inline";
+        btn.value = "Read More";
+      }
+    }
+    
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+<!--
+<script>
+  function toggleMenu() {
+     var menu = document.getElementById("navLinks");
+     menu.classList.toggle("show");
+  }
+  </script>
+-->
   </body>
 </html>
